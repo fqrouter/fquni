@@ -4,8 +4,8 @@ fquni
 unidirectional proxy
 
 on client:
-./proxy-up.sh
-python fquni_client.py x.x.x.x:19842
+sudo ./proxy-down.sh ; sudo ./proxy-up.sh x.x.x.x
+tail -f /tmp/fquni.log
 
 on server:
 python fquni_server.py
